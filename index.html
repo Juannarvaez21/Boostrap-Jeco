@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Sidebar 03</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar" >
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Menú</span>
+	        </button>
+        </div>
+				<div class="p-4">
+		  		<h1><a href="index.html" class="logo">JECO</a></h1>
+	        <ul class="list-unstyled components mb-5">
+	          <li class="active">
+	            <a href="#"></span>Enero</a>
+	          </li>
+	          <li>
+				<a href="#"></span>Febrero</a>
+	          </li>
+	          <li>
+	            <a href="#"></span>Marzo</a>
+	          </li>
+	          <li>
+				<a href="#"></span>Abril</a>
+	          </li>
+	          <li>
+				<a href="#"></span>Mayo</a>
+	          </li>
+	        </ul>	
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+		<div class="main-content">
+			<div class="container">
+			  <h2 class="mb-5">Table #7</h2>
+			  <div class="table-responsive">
+				<table class="table table-striped custom-table">
+				  <thead>
+					<tr>
+					  <!-- COLUMNAS -->
+					  <th scope="col">Cliente</th>
+					  <th scope="col">Fecha entrega</th>
+					  <th scope="col">OC</th>
+					  <th scope="col">Codigo</th>
+					  <th scope="col">NOMBRE</th>
+					  <th scope="col">CANT</th>
+					  <th scope="col">COSTO UNIT</th>
+					  <th scope="col">Cost total</th>
+					  <th scope="col">C.TELA</th>
+					  <th scope="col">COSTURA</th>
+					  <th scope="col">C.MAD</th>
+					  <th scope="col">ARM</th>
+					  <th scope="col">EMPARR</th>
+					  <th scope="col">C.ESP</th>
+					  <th scope="col">P.BLAN</th>
+					  <th scope="col">TAPIC</th>
+					  <th scope="col">ENSAM</th>
+					  <th scope="col">DESPA</th>
+					  <th scope="col">NIEVES</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<!-- FILAS -->
+					<tr>
+					  <!-- CLIENTE -->
+					  <td>JAMAR</td>
+		
+					  <!-- FECHA ENTREGA -->
+					  <td><input type="date"></td>
+		
+					  <!-- OC -->
+					  <td>90252212</td>
+		
+					  <!-- CODIGO -->
+					  <td>
+						<input list="codigos" id="codigos">
+						<datalist id="codigos">
+						  <option value="7033248">
+						  <option value="7033248">
+						  <option value="7033248">
+						</datalist>
+					  </td>
+		
+					  <!-- NOMBRE -->
+					  <td style="font-size: 15px;">SALA RINCONERA FIT VELVET PLOMO EXP/SIRI HOME</td>
+		
+					  <!-- CANTIDAD -->
+					  <td><input type="number" style="width: 60px;"></td>
+		
+					  <!-- COSTO UNITARIO -->
+					  <td><input type="text" class="money-input" oninput="handleInput(event)" placeholder="0"></td>
+		
+					  <!-- COSTO TOTAL -->
+					  <td><input type="text" class="money-input" oninput="handleInput(event)" placeholder="0" disabled></td>
+		
+					  <!-- BARRAS DE PROGRESO -->
+					  <td>
+						<div class="progress-circle" id="progressCircle1">
+						  <input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle1')">
+						</div>
+					  </td>
+					  <td>
+						<div class="progress-circle" id="progressCircle2">
+						  <input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle2')">
+						</div>
+					  </td>
+					  <td>
+						<div class="progress-circle" id="progressCircle3">
+						  <input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle3')">
+						</div>
+					  </td>
+					  <td>
+						<div class="progress-circle" id="progressCircle4">
+						  <input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle4')">
+						</div>
+					  </td>
+					  <td>
+						<div class="progress-circle" id="progressCircle5">
+						  <input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle5')">
+						</div>
+					  </td>
+					  <td>
+						<div class="progress-circle" id="progressCircle6">
+						  <input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle6')">
+						</div>
+					  </td>
+					  <td>
+						<div class="progress-circle" id="progressCircle7">
+						  <input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle7')">
+						</div>
+					  </td>
+					  <td>
+						<div class="progress-circle" id="progressCircle8">
+						  <input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle8')">
+						</div>
+					  </td>
+					  <td>
+						<div class="progress-circle" id="progressCircle8">
+						  <input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle8')">
+						</div>
+					  </td>
+					  <td>
+						<div class="progress-circle" id="progressCircle8">
+						  <input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle8')">
+						</div>
+					  </td>
+					</tr>
+					
+					<tr>
+						<!-- CLIENTE -->
+						<td>JAMAR</td>
+		  
+						<!-- FECHA ENTREGA -->
+						<td><input type="date"></td>
+		  
+						<!-- OC -->
+						<td>90252212</td>
+		  
+						<!-- CODIGO -->
+						<td>
+						  <input list="codigos" id="codigos">
+						  <datalist id="codigos">
+							<option value="7033248">
+							<option value="7033248">
+							<option value="7033248">
+						  </datalist>
+						</td>
+		  
+						<!-- NOMBRE -->
+						<td style="font-size: 15px;">SALA RINCONERA FIT VELVET PLOMO EXP/SIRI HOME</td>
+		  
+						<!-- CANTIDAD -->
+						<td><input type="number" style="width: 60px;"></td>
+		  
+						<!-- COSTO UNITARIO -->
+						<td><input type="text" class="money-input" oninput="handleInput(event)" placeholder="0"></td>
+		  
+						<!-- COSTO TOTAL -->
+						<td><input type="text" class="money-input" oninput="handleInput(event)" placeholder="0" disabled></td>
+		  
+						<!-- BARRAS DE PROGRESO -->
+						<td>
+						  <div class="progress-circle" id="progressCircle1">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle1')">
+						  </div>
+						</td>
+						<td>
+						  <div class="progress-circle" id="progressCircle2">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle2')">
+						  </div>
+						</td>
+						<td>
+						  <div class="progress-circle" id="progressCircle3">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle3')">
+						  </div>
+						</td>
+						<td>
+						  <div class="progress-circle" id="progressCircle4">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle4')">
+						  </div>
+						</td>
+						<td>
+						  <div class="progress-circle" id="progressCircle5">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle5')">
+						  </div>
+						</td>
+						<td>
+						  <div class="progress-circle" id="progressCircle6">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle6')">
+						  </div>
+						</td>
+						<td>
+						  <div class="progress-circle" id="progressCircle7">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle7')">
+						  </div>
+						</td>
+						<td>
+						  <div class="progress-circle" id="progressCircle8">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle8')">
+						  </div>
+						</td>
+						<td>
+						  <div class="progress-circle" id="progressCircle8">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle8')">
+						  </div>
+						</td>
+						<td>
+						  <div class="progress-circle" id="progressCircle8">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle8')">
+						  </div>
+						</td>
+					  </tr>
+
+					  <tr>
+						<!-- CLIENTE -->
+						<td>JAMAR</td>
+		  
+						<!-- FECHA ENTREGA -->
+						<td><input type="date"></td>
+		  
+						<!-- OC -->
+						<td>90252212</td>
+		  
+						<!-- CODIGO -->
+						<td>
+						  <input list="codigos" id="codigos">
+						  <datalist id="codigos">
+							<option value="7033248">
+							<option value="7033248">
+							<option value="7033248">
+						  </datalist>
+						</td>
+		  
+						<!-- NOMBRE -->
+						<td style="font-size: 15px;">SALA RINCONERA FIT VELVET PLOMO EXP/SIRI HOME</td>
+		  
+						<!-- CANTIDAD -->
+						<td><input type="number" style="width: 60px;"></td>
+		  
+						<!-- COSTO UNITARIO -->
+						<td><input type="text" class="money-input" oninput="handleInput(event)" placeholder="0"></td>
+		  
+						<!-- COSTO TOTAL -->
+						<td><input type="text" class="money-input" oninput="handleInput(event)" placeholder="0" disabled></td>
+		  
+						<!-- BARRAS DE PROGRESO -->
+						<td>
+						  <div class="progress-circle" id="progressCircle1">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle1')">
+						  </div>
+						</td>
+						<td>
+						  <div class="progress-circle" id="progressCircle2">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle2')">
+						  </div>
+						</td>
+						<td>
+						  <div class="progress-circle" id="progressCircle3">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle3')">
+						  </div>
+						</td>
+						<td>
+						  <div class="progress-circle" id="progressCircle4">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle4')">
+						  </div>
+						</td>
+						<td>
+						  <div class="progress-circle" id="progressCircle5">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle5')">
+						  </div>
+						</td>
+						<td>
+						  <div class="progress-circle" id="progressCircle6">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle6')">
+						  </div>
+						</td>
+						<td>
+						  <div class="progress-circle" id="progressCircle7">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle7')">
+						  </div>
+						</td>
+						<td>
+						  <div class="progress-circle" id="progressCircle8">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle8')">
+						  </div>
+						</td>
+						<td>
+						  <div class="progress-circle" id="progressCircle8">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle8')">
+						  </div>
+						</td>
+						<td>
+						  <div class="progress-circle" id="progressCircle8">
+							<input type="number" min="0" max="100" value="0" oninput="updateProgress(this.value, 'progressCircle8')">
+						  </div>
+						</td>
+					  </tr>
+				  </tbody>
+				</table>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
